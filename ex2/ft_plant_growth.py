@@ -3,12 +3,16 @@ class Plant:
         self.name = name
         self.height = height
         self.age = age
+
     def grow(self):
         self.height += 1
+
     def advance_age(self):
         self.age += 1
+
     def get_info(self):
         return f"{self.name}: {self.height}cm, {self.age} days old"
+
 
 if __name__ == "__main__":
     rose = Plant("Rose", 25, 30)
@@ -22,7 +26,7 @@ if __name__ == "__main__":
     for plant in plants:
         print(plant.get_info())
 
-    for day in range (6):
+    for day in range(6):
         for plant in plants:
             plant.grow()
             plant.advance_age()
