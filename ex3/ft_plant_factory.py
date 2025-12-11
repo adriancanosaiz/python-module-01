@@ -32,4 +32,4 @@ if __name__ == "__main__":
     print("=== Plant Factory Output ===")
     for plant in plants:
         print("Created:", plant.get_info())
-    print(f"Total plants created: {len(plants)}")
+    print(f"\nTotal plants created: {len(plants)}")
